@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html><head>
+<meta charset="utf-8"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<title>Connect Telco</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+    :root {
+      --primary-500: #0077FF;
+      --primary-600: #0066CC;
+      --secondary-50: #F9FAFB;
+      --secondary-100: #F3F4F6;
+      --secondary-200: #E5E7EB;
+      --secondary-700: #374151;
+      --secondary-900: #111827;
+    }
+    body {
+      font-family: 'Spline Sans', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-secondary-50 text-secondary-900">
+<div class="flex flex-col min-h-screen">
+<header class="bg-white border-b border-secondary-200">
+<nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+<div class="flex items-center gap-3">
+<svg class="h-8 w-8 text-primary-500" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M36.7273 44C33.9891 44 31.6043 39.8386 30.3636 33.69C29.123 39.8386 26.7382 44 24 44C21.2618 44 18.877 39.8386 17.6364 33.69C16.3957 39.8386 14.0109 44 11.2727 44C7.25611 44 4 35.0457 4 24C4 12.9543 7.25611 4 11.2727 4C14.0109 4 16.3957 8.16144 17.6364 14.31C18.877 8.16144 21.2618 4 24 4C26.7382 4 29.123 8.16144 30.3636 14.31C31.6043 8.16144 33.9891 4 36.7273 4C40.7439 4 44 12.9543 44 24C44 35.0457 40.7439 44 36.7273 44Z" fill="currentColor"></path>
+</svg>
+<span class="text-xl font-bold">Connect</span>
+</div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-secondary-700 hover:text-primary-500 transition-colors" href="#">Home</a>
+<a class="text-secondary-700 hover:text-primary-500 transition-colors" href="#">Shop</a>
+<a class="text-secondary-700 hover:text-primary-500 transition-colors" href="#">Support</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="p-2 rounded-full hover:bg-secondary-100 transition-colors">
+<span class="material-symbols-outlined text-secondary-700">notifications</span>
+</button>
+<img alt="User avatar" class="w-10 h-10 rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjHp44GQYn3MEAe6AGxBf9T5bYBxJf2rWvYHR8fcCbM_aLGEKpNnSnCMRybLRjqO9R-JpvYHk9iKGx0z300UukN9QsTdc-yALZmAYD9TBkONNcWsHrQDQ7Prk1ZSyCPLM6_1oOevf5in-ZidmJlpPg7kw1xbVWFgqHRxtitdeRcAqzP059EXtAVsqDYlPSy0uzuFHpI4H7511rg00ToqIXT02rZIg5IvAGe-N-VgzDCTaXAs9xc5Y2JSUc9RPUjTcf6Ker6DIQSDs"/>
+</div>
+</nav>
+</header>
+<main class="flex-grow container mx-auto px-6 py-8">
+<div class="mb-8">
+<h1 class="text-4xl font-bold text-secondary-900">My Account</h1>
+<p class="text-secondary-700 mt-1">Welcome back, Sarah</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+<div class="lg:col-span-2 space-y-8">
+<div>
+<h2 class="text-2xl font-bold text-secondary-900 mb-6">Your Services</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="bg-white rounded-xl shadow-sm p-6 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-3 mb-4">
+<span class="material-symbols-outlined text-primary-500">smartphone</span>
+<h3 class="text-lg font-bold">Mobile</h3>
+</div>
+<p class="text-secondary-900 font-medium">Unlimited Plan</p>
+<p class="text-sm text-secondary-700">Renews on 12/31/2024</p>
+</div>
+<button class="mt-6 w-full bg-primary-500 text-white font-bold py-2 px-4 rounded-full hover:bg-primary-600 transition-colors">Manage Plan</button>
+</div>
+<div class="bg-white rounded-xl shadow-sm p-6 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-3 mb-4">
+<span class="material-symbols-outlined text-primary-500">router</span>
+<h3 class="text-lg font-bold">Internet</h3>
+</div>
+<p class="text-secondary-900 font-medium">Fiber 1000 Mbps</p>
+<p class="text-sm text-secondary-700">Renews on 12/31/2024</p>
+</div>
+<button class="mt-6 w-full bg-primary-500 text-white font-bold py-2 px-4 rounded-full hover:bg-primary-600 transition-colors">Manage Plan</button>
+</div>
+</div>
+</div>
+<div>
+<h2 class="text-2xl font-bold text-secondary-900 mb-6">Usage Overview</h2>
+<div class="bg-white rounded-xl shadow-sm p-6 space-y-6">
+<div>
+<div class="flex justify-between items-center mb-2">
+<p class="font-medium text-secondary-900">Data Usage</p>
+<p class="text-sm font-medium text-primary-500">75%</p>
+</div>
+<div class="bg-secondary-200 rounded-full h-2.5">
+<div class="bg-primary-500 h-2.5 rounded-full" style="width: 75%"></div>
+</div>
+<p class="text-sm text-secondary-700 mt-2">15 GB / 20 GB used</p>
+</div>
+<div>
+<div class="flex justify-between items-center mb-2">
+<p class="font-medium text-secondary-900">Talk Time</p>
+<p class="text-sm font-medium text-primary-500">50%</p>
+</div>
+<div class="bg-secondary-200 rounded-full h-2.5">
+<div class="bg-primary-500 h-2.5 rounded-full" style="width: 50%"></div>
+</div>
+<p class="text-sm text-secondary-700 mt-2">500 / 1000 minutes used</p>
+</div>
+</div>
+</div>
+</div>
+<div class="space-y-8">
+<h2 class="text-2xl font-bold text-secondary-900">Billing &amp; Payments</h2>
+<div class="bg-white rounded-xl shadow-sm p-6">
+<h3 class="text-lg font-bold mb-1">Current Balance</h3>
+<p class="text-5xl font-bold text-primary-500 mb-4">$50.00</p>
+<p class="text-sm text-secondary-700 mb-6">Due on 12/31/2024</p>
+<button class="w-full bg-primary-500 text-white font-bold py-3 px-4 rounded-full hover:bg-primary-600 transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined">payment</span>
+              Pay Now
+            </button>
+<button class="w-full mt-3 bg-secondary-100 text-secondary-900 font-bold py-3 px-4 rounded-full hover:bg-secondary-200 transition-colors">View Bill Details</button>
+</div>
+<div class="bg-white rounded-xl shadow-sm p-6">
+<h3 class="text-lg font-bold mb-4">Payment History</h3>
+<ul class="space-y-4">
+<li class="flex justify-between items-center">
+<div>
+<p class="font-medium">November 2023</p>
+<p class="text-sm text-secondary-700">Paid on Nov 15</p>
+</div>
+<p class="font-medium">$50.00</p>
+</li>
+<li class="flex justify-between items-center">
+<div>
+<p class="font-medium">October 2023</p>
+<p class="text-sm text-secondary-700">Paid on Oct 15</p>
+</div>
+<p class="font-medium">$50.00</p>
+</li>
+</ul>
+<a class="mt-6 block text-center text-primary-500 font-bold hover:underline" href="#">View All History</a>
+</div>
+</div>
+</div>
+</main>
+<footer class="bg-white mt-16 border-t border-secondary-200">
+<div class="container mx-auto px-6 py-6 text-center text-secondary-700">
+        © 2024 Connect Telco. All rights reserved.
+      </div>
+</footer>
+</div>
+
+</body></html>

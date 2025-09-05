@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Telco Dashboard</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+    :root {
+      --primary-color: #137fec;
+      --background-color: #0F172A;
+      --card-color: #1E293B;
+      --text-primary: #F8FAFC;
+      --text-secondary: #94A3B8;
+      --accent-color: #38BDF8;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-[var(--background-color)] text-[var(--text-primary)]">
+<div class="relative flex size-full min-h-screen flex-col justify-between overflow-x-hidden">
+<main class="flex-grow">
+<header class="sticky top-0 z-10 flex items-center justify-between bg-[var(--background-color)]/80 p-4 backdrop-blur-sm">
+<div class="flex items-center gap-2">
+<button class="flex size-10 items-center justify-center rounded-full transition-colors hover:bg-white/10">
+<span class="material-symbols-outlined"> menu </span>
+</button>
+</div>
+<h1 class="flex-1 text-center text-lg font-semibold">My Dashboard</h1>
+<div class="flex items-center gap-2">
+<button class="relative flex size-10 items-center justify-center rounded-full transition-colors hover:bg-white/10">
+<span class="material-symbols-outlined"> notifications </span>
+<span class="absolute right-2 top-2 flex h-2.5 w-2.5 items-center justify-center rounded-full bg-red-500 text-[9px] font-bold text-white"></span>
+</button>
+<button class="flex size-10 items-center justify-center rounded-full transition-colors hover:bg-white/10">
+<span class="material-symbols-outlined"> settings </span>
+</button>
+</div>
+</header>
+<section class="p-4 pt-0">
+<div class="flex items-center gap-4">
+<div class="size-20 rounded-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCvVoiwE98SdK_STNpWoHyYB-vEjTie3J8XBP59V7xMQzLdHNKex7o0og8BmzRlMU-jZUYVnoAo0NisHSGaFZCGNTfDDevAleWrURSBz46pUaTVaQkYWC2aEAmPTy54llimwYF4QQ9wOABexdHt3zlFJIYEMrAZXu8zFk1OlGT_MNHTQ_aAqdJvrPmA9K4c0n2uY0b173LdUs3j2miWmWPqulfmlxZS08SNFUM-XSNwrtrgOT4CLmQxsO-oXCjXKre0pzEFVGcB7zo");'></div>
+<div>
+<p class="text-xl font-bold">Sophia Clark</p>
+<p class="text-sm text-[var(--text-secondary)]">Account: 1234567890</p>
+</div>
+</div>
+</section>
+<section class="px-4 pb-4">
+<div class="flex space-x-2 rounded-lg bg-[var(--card-color)] p-1">
+<button class="flex-1 rounded-md bg-[var(--primary-color)] py-2 text-sm font-medium text-white">Current Month</button>
+<button class="flex-1 rounded-md py-2 text-sm font-medium text-[var(--text-secondary)] transition-colors hover:bg-slate-700/50 hover:text-white">Last Month</button>
+<button class="flex-1 rounded-md py-2 text-sm font-medium text-[var(--text-secondary)] transition-colors hover:bg-slate-700/50 hover:text-white">Last 3 Months</button>
+</div>
+</section>
+<section class="px-4">
+<div class="grid grid-cols-2 gap-4">
+<div class="flex flex-col gap-2 rounded-xl bg-[var(--card-color)] p-4">
+<p class="text-sm font-medium text-[var(--text-secondary)]">Balance</p>
+<p class="text-2xl font-bold">$25.50</p>
+</div>
+<div class="flex flex-col gap-2 rounded-xl bg-[var(--card-color)] p-4">
+<p class="text-sm font-medium text-[var(--text-secondary)]">Due Date</p>
+<p class="text-2xl font-bold">25 Jul</p>
+</div>
+</div>
+</section>
+<section class="p-4">
+<div class="flex flex-col gap-3 rounded-xl bg-[var(--card-color)] p-4">
+<div class="flex items-center justify-between">
+<p class="text-base font-semibold">Data Usage</p>
+<p class="text-sm font-medium">
+<span class="font-bold">2.5 GB</span>
+<span class="text-[var(--text-secondary)]">/ 5 GB</span>
+</p>
+</div>
+<div class="h-2.5 w-full rounded-full bg-slate-700">
+<div class="h-2.5 rounded-full bg-[var(--accent-color)]" style="width: 50%"></div>
+</div>
+<p class="text-right text-sm text-[var(--text-secondary)]">15 days left</p>
+</div>
+</section>
+<section class="p-4">
+<h2 class="mb-3 text-lg font-semibold">Quick Actions</h2>
+<div class="grid grid-cols-2 gap-4 sm:grid-cols-4">
+<button class="flex flex-col items-center justify-center gap-2 rounded-xl bg-[var(--card-color)] py-4 transition-colors hover:bg-white/10">
+<span class="material-symbols-outlined text-3xl text-[var(--accent-color)]"> payment </span>
+<span class="text-sm font-medium">Pay Bill</span>
+</button>
+<button class="flex flex-col items-center justify-center gap-2 rounded-xl bg-[var(--card-color)] py-4 transition-colors hover:bg-white/10">
+<span class="material-symbols-outlined text-3xl text-[var(--accent-color)]"> add_card </span>
+<span class="text-sm font-medium">Top Up</span>
+</button>
+<button class="flex flex-col items-center justify-center gap-2 rounded-xl bg-[var(--card-color)] py-4 transition-colors hover:bg-white/10">
+<span class="material-symbols-outlined text-3xl text-[var(--accent-color)]"> support_agent </span>
+<span class="text-sm font-medium">Support</span>
+</button>
+<button class="flex flex-col items-center justify-center gap-2 rounded-xl bg-[var(--card-color)] py-4 transition-colors hover:bg-white/10">
+<span class="material-symbols-outlined text-3xl text-[var(--accent-color)]"> tune </span>
+<span class="text-sm font-medium">Manage</span>
+</button>
+</div>
+</section>
+</main>
+<footer class="sticky bottom-0 z-10 border-t border-slate-700/50 bg-[var(--background-color)]/80 backdrop-blur-sm">
+<nav class="flex items-center justify-around px-2 py-2">
+<a class="flex w-20 flex-col items-center justify-center gap-1 rounded-lg bg-[var(--primary-color)]/10 py-1 text-[var(--primary-color)]" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+<p class="text-xs font-medium">Dashboard</p>
+</a>
+<a class="flex w-20 flex-col items-center justify-center gap-1 py-1 text-[var(--text-secondary)] transition-colors hover:text-white" href="#">
+<span class="material-symbols-outlined">list_alt</span>
+<p class="text-xs font-medium">Services</p>
+</a>
+<a class="flex w-20 flex-col items-center justify-center gap-1 py-1 text-[var(--text-secondary)] transition-colors hover:text-white" href="#">
+<span class="material-symbols-outlined">quiz</span>
+<p class="text-xs font-medium">Support</p>
+</a>
+<a class="flex w-20 flex-col items-center justify-center gap-1 py-1 text-[var(--text-secondary)] transition-colors hover:text-white" href="#">
+<span class="material-symbols-outlined">more_horiz</span>
+<p class="text-xs font-medium">More</p>
+</a>
+</nav>
+</footer>
+</div>
+
+</body></html>

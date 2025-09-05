@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Telco Dashboard</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+        :root {
+            --primary-color: #137fec;
+            --background-color: #0F172A;
+            --card-color: #1E293B;
+            --text-primary: #F8FAFC;
+            --text-secondary: #94A3B8;
+            --accent-color: #38BDF8;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-[var(--background-color)] text-[var(--text-primary)]">
+<div class="relative flex size-full min-h-screen flex-col justify-between overflow-x-hidden">
+<main class="flex-grow">
+<header class="flex items-center justify-between p-4 sticky top-0 bg-[var(--background-color)]/80 backdrop-blur-sm z-10">
+<div class="w-10"></div>
+<h1 class="text-lg font-semibold text-center flex-1">My Dashboard</h1>
+<button class="flex items-center justify-center size-10 rounded-full hover:bg-white/10 transition-colors">
+<span class="material-symbols-outlined">
+                        settings
+                    </span>
+</button>
+</header>
+<section class="p-4 pt-0">
+<div class="flex items-center gap-4">
+<div class="size-20 rounded-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCvVoiwE98SdK_STNpWoHyYB-vEjTie3J8XBP59V7xMQzLdHNKex7o0og8BmzRlMU-jZUYVnoAo0NisHSGaFZCGNTfDDevAleWrURSBz46pUaTVaQkYWC2aEAmPTy54llimwYF4QQ9wOABexdHt3zlFJIYEMrAZXu8zFk1OlGT_MNHTQ_aAqdJvrPmA9K4c0n2uY0b173LdUs3j2miWmWPqulfmlxZS08SNFUM-XSNwrtrgOT4CLmQxsO-oXCjXKre0pzEFVGcB7zo");'></div>
+<div>
+<p class="text-xl font-bold">Sophia Clark</p>
+<p class="text-[var(--text-secondary)] text-sm">Account: 1234567890</p>
+</div>
+</div>
+</section>
+<section class="px-4">
+<div class="grid grid-cols-2 gap-4">
+<div class="flex flex-col gap-2 rounded-xl p-4 bg-[var(--card-color)]">
+<p class="text-sm font-medium text-[var(--text-secondary)]">Balance</p>
+<p class="text-2xl font-bold">$25.50</p>
+</div>
+<div class="flex flex-col gap-2 rounded-xl p-4 bg-[var(--card-color)]">
+<p class="text-sm font-medium text-[var(--text-secondary)]">Due Date</p>
+<p class="text-2xl font-bold">25 Jul</p>
+</div>
+</div>
+</section>
+<section class="p-4">
+<div class="flex flex-col gap-3 rounded-xl p-4 bg-[var(--card-color)]">
+<div class="flex items-center justify-between">
+<p class="text-base font-semibold">Data Usage</p>
+<p class="text-sm font-medium">
+<span class="font-bold">2.5 GB</span>
+<span class="text-[var(--text-secondary)]">/ 5 GB</span>
+</p>
+</div>
+<div class="w-full bg-slate-700 rounded-full h-2.5">
+<div class="bg-[var(--accent-color)] h-2.5 rounded-full" style="width: 50%"></div>
+</div>
+<p class="text-sm text-[var(--text-secondary)] text-right">15 days left</p>
+</div>
+</section>
+<section class="p-4">
+<h2 class="text-lg font-semibold mb-3">Quick Actions</h2>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+<button class="flex flex-col items-center justify-center gap-2 rounded-xl py-4 bg-[var(--card-color)] hover:bg-white/10 transition-colors">
+<span class="material-symbols-outlined text-[var(--accent-color)] text-3xl"> payment </span>
+<span class="text-sm font-medium">Pay Bill</span>
+</button>
+<button class="flex flex-col items-center justify-center gap-2 rounded-xl py-4 bg-[var(--card-color)] hover:bg-white/10 transition-colors">
+<span class="material-symbols-outlined text-[var(--accent-color)] text-3xl"> add_card </span>
+<span class="text-sm font-medium">Top Up</span>
+</button>
+<button class="flex flex-col items-center justify-center gap-2 rounded-xl py-4 bg-[var(--card-color)] hover:bg-white/10 transition-colors">
+<span class="material-symbols-outlined text-[var(--accent-color)] text-3xl"> support_agent </span>
+<span class="text-sm font-medium">Support</span>
+</button>
+<button class="flex flex-col items-center justify-center gap-2 rounded-xl py-4 bg-[var(--card-color)] hover:bg-white/10 transition-colors">
+<span class="material-symbols-outlined text-[var(--accent-color)] text-3xl"> tune </span>
+<span class="text-sm font-medium">Manage</span>
+</button>
+</div>
+</section>
+</main>
+<footer class="sticky bottom-0 bg-[var(--background-color)]/80 backdrop-blur-sm z-10 border-t border-slate-700/50">
+<nav class="flex justify-around items-center px-2 py-2">
+<a class="flex flex-col items-center justify-center gap-1 w-20 py-1 rounded-lg text-[var(--primary-color)] bg-[var(--primary-color)]/10" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+<p class="text-xs font-medium">Dashboard</p>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 w-20 py-1 text-[var(--text-secondary)] hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined">list_alt</span>
+<p class="text-xs font-medium">Services</p>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 w-20 py-1 text-[var(--text-secondary)] hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined">quiz</span>
+<p class="text-xs font-medium">Support</p>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 w-20 py-1 text-[var(--text-secondary)] hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined">more_horiz</span>
+<p class="text-xs font-medium">More</p>
+</a>
+</nav>
+</footer>
+</div>
+
+</body></html>

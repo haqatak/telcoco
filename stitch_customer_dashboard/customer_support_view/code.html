@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Spline+Sans%3Awght%40400%3B500%3B700" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+</head>
+<body class="bg-gray-50">
+<div class="relative flex size-full min-h-screen flex-col group/design-root overflow-x-hidden" style='font-family: "Spline Sans", "Noto Sans", sans-serif;'>
+<div class="flex flex-1">
+<aside class="w-80 bg-white border-r border-gray-200 flex flex-col justify-between">
+<div class="p-6">
+<div class="flex flex-col mb-8">
+<h1 class="text-gray-900 text-lg font-bold">Support Tools</h1>
+<p class="text-gray-500 text-sm">Agent: Alex</p>
+</div>
+<nav class="flex flex-col gap-2">
+<a class="flex items-center gap-3 px-4 py-2 text-gray-700 rounded-full hover:bg-gray-100" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+<p class="text-sm font-medium">Dashboard</p>
+</a>
+<a class="flex items-center gap-3 px-4 py-2 text-gray-700 rounded-full hover:bg-gray-100" href="#">
+<span class="material-symbols-outlined">person</span>
+<p class="text-sm font-medium">Account</p>
+</a>
+<a class="flex items-center gap-3 px-4 py-2 text-gray-700 rounded-full hover:bg-gray-100" href="#">
+<span class="material-symbols-outlined">credit_card</span>
+<p class="text-sm font-medium">Billing</p>
+</a>
+<a class="flex items-center gap-3 px-4 py-2 rounded-full bg-yellow-100 text-yellow-800" href="#">
+<span class="material-symbols-outlined">support_agent</span>
+<p class="text-sm font-medium">Support</p>
+</a>
+<a class="flex items-center gap-3 px-4 py-2 text-gray-700 rounded-full hover:bg-gray-100" href="#">
+<span class="material-symbols-outlined">settings</span>
+<p class="text-sm font-medium">Settings</p>
+</a>
+</nav>
+</div>
+<div class="p-6 border-t border-gray-200">
+<button class="w-full flex items-center justify-center gap-2 rounded-full h-10 px-4 bg-gray-800 text-white text-sm font-bold hover:bg-gray-900">
+<span class="material-symbols-outlined">logout</span>
+<span>End Session</span>
+</button>
+</div>
+</aside>
+<main class="flex-1 p-8">
+<div class="max-w-4xl mx-auto">
+<header class="mb-8">
+<h1 class="text-gray-900 text-4xl font-bold leading-tight">Customer Support View</h1>
+<p class="text-gray-600 text-base">Viewing customer dashboard as <span class="font-semibold text-gray-800">Sarah Miller</span></p>
+</header>
+<div class="border-b border-gray-200 mb-8">
+<nav class="flex gap-8 -mb-px">
+<a class="flex items-center justify-center border-b-2 border-b-yellow-400 text-gray-900 pb-3 pt-4 px-1" href="#">
+<p class="text-sm font-bold tracking-wide">Overview</p>
+</a>
+<a class="flex items-center justify-center border-b-2 border-b-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 pb-3 pt-4 px-1" href="#">
+<p class="text-sm font-bold tracking-wide">Usage</p>
+</a>
+<a class="flex items-center justify-center border-b-2 border-b-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 pb-3 pt-4 px-1" href="#">
+<p class="text-sm font-bold tracking-wide">Devices</p>
+</a>
+<a class="flex items-center justify-center border-b-2 border-b-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 pb-3 pt-4 px-1" href="#">
+<p class="text-sm font-bold tracking-wide">Settings</p>
+</a>
+</nav>
+</div>
+<section class="mb-12">
+<h2 class="text-gray-900 text-2xl font-bold mb-6">Account Overview</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6">
+<div class="flex flex-col gap-1 py-4">
+<p class="text-gray-500 text-sm">Account Number</p>
+<p class="text-gray-800 text-base">1234567890</p>
+</div>
+<div class="flex flex-col gap-1 py-4">
+<p class="text-gray-500 text-sm">Service Address</p>
+<p class="text-gray-800 text-base">123 Maple Street, Anytown, CA 91234</p>
+</div>
+<div class="flex flex-col gap-1 py-4">
+<p class="text-gray-500 text-sm">Billing Cycle</p>
+<p class="text-gray-800 text-base">Monthly</p>
+</div>
+<div class="flex flex-col gap-1 py-4">
+<p class="text-gray-500 text-sm">Account Status</p>
+<p class="text-green-600 bg-green-100 text-sm font-medium px-3 py-1 rounded-full self-start">Active</p>
+</div>
+<div class="flex flex-col gap-1 py-4">
+<p class="text-gray-500 text-sm">Last Payment</p>
+<p class="text-gray-800 text-base">$50.00 on July 15, 2024</p>
+</div>
+<div class="flex flex-col gap-1 py-4">
+<p class="text-gray-500 text-sm">Next Payment Due</p>
+<p class="text-gray-800 text-base">August 15, 2024</p>
+</div>
+</div>
+</section>
+<section class="mb-12">
+<h2 class="text-gray-900 text-2xl font-bold mb-6">Service Details</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6">
+<div class="flex flex-col gap-1 py-4">
+<p class="text-gray-500 text-sm">Plan Name</p>
+<p class="text-gray-800 text-base">Unlimited Data Plan</p>
+</div>
+<div class="flex flex-col gap-1 py-4">
+<p class="text-gray-500 text-sm">Data Usage</p>
+<div class="w-full bg-gray-200 rounded-full h-2.5 mt-1">
+<div class="bg-yellow-400 h-2.5 rounded-full" style="width: 75%"></div>
+</div>
+<p class="text-gray-800 text-sm mt-1">15 GB / 20 GB</p>
+</div>
+<div class="flex flex-col gap-1 py-4">
+<p class="text-gray-500 text-sm">Next Bill Amount</p>
+<p class="text-gray-800 text-base font-semibold">$50.00</p>
+</div>
+<div class="flex flex-col gap-1 py-4">
+<p class="text-gray-500 text-sm">Plan Features</p>
+<p class="text-gray-800 text-base">Unlimited calls and texts</p>
+</div>
+<div class="flex flex-col gap-1 py-4">
+<p class="text-gray-500 text-sm">Remaining Data</p>
+<p class="text-gray-800 text-base">5 GB</p>
+</div>
+<div class="flex flex-col gap-1 py-4">
+<p class="text-gray-500 text-sm">AutoPay</p>
+<p class="text-gray-800 text-base">Enabled</p>
+</div>
+</div>
+</section>
+<section>
+<h2 class="text-gray-900 text-2xl font-bold mb-6">Support Tools</h2>
+<div class="bg-white p-6 rounded-2xl border border-gray-200 flex flex-col sm:flex-row items-center justify-between gap-4">
+<p class="text-gray-600 text-center sm:text-left">Use these tools to assist the customer directly on their screen.</p>
+<div class="flex items-center gap-4">
+<button class="flex items-center justify-center gap-2 min-w-[84px] cursor-pointer rounded-full h-11 px-6 bg-yellow-400 text-gray-900 text-sm font-bold hover:bg-yellow-500 transition-colors">
+<span class="material-symbols-outlined">highlight</span>
+<span class="truncate">Highlight Element</span>
+</button>
+<button class="flex items-center justify-center gap-2 min-w-[84px] cursor-pointer rounded-full h-11 px-6 bg-gray-200 text-gray-800 text-sm font-bold hover:bg-gray-300 transition-colors">
+<span class="material-symbols-outlined">screen_share</span>
+<span class="truncate">Co-browse</span>
+</button>
+</div>
+</div>
+</section>
+</div>
+</main>
+</div>
+</div>
+
+</body></html>
