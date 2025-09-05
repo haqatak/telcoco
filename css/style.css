@@ -1,8 +1,8 @@
 /* General Styles */
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    background-color: #f4f7f6;
-    color: #333;
+    background-color: #edd5d7; /* Light Pink */
+    color: #001a09; /* Very Dark Green/Black */
     margin: 0;
     padding: 0;
     display: flex;
@@ -31,7 +31,7 @@ body {
 
 .login-container h2 {
     margin-bottom: 10px;
-    color: #00529b; /* Telco Blue */
+    color: #d9184e; /* Darker Pink/Red */
 }
 
 .login-container p {
@@ -61,7 +61,7 @@ body {
 .btn {
     width: 100%;
     padding: 12px;
-    background-color: #00529b; /* Telco Blue */
+    background-color: #d9184e; /* Darker Pink/Red */
     color: #ffffff;
     border: none;
     border-radius: 4px;
@@ -72,24 +72,24 @@ body {
 }
 
 .btn:hover {
-    background-color: #003d73;
+    background-color: #e32242; /* Lighter Red on hover */
 }
 
 .error-message {
-    color: #d93025;
+    color: #f53f36; /* Bright Red */
     margin-top: 15px;
     min-height: 20px;
 }
 
 /* Dashboard Styles */
 body {
-    background-color: #f8f9fa;
+    background-color: #edd5d7; /* Light Pink */
     display: block; /* Override flex for dashboard */
 }
 
 header {
-    background-color: #00529b; /* Telco Blue */
-    color: white;
+    background-color: #d9184e; /* Darker Pink/Red */
+    color: #ffffff;
     padding: 10px 0;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
@@ -110,12 +110,12 @@ header h1 {
 }
 
 .btn-secondary {
-    background-color: #ff8c00; /* Telco Orange */
+    background-color: #009736; /* Green */
     margin-left: 15px;
 }
 
 .btn-secondary:hover {
-    background-color: #cc7000;
+    background-color: #0ca823; /* Bright Green */
 }
 
 main {
@@ -123,15 +123,15 @@ main {
     padding-bottom: 20px;
 }
 
-#dashboard-content h2 {
-    color: #00529b;
+#dashboard-content h2, main h2 {
+    color: #d9184e; /* Darker Pink/Red */
     border-bottom: 2px solid #e0e0e0;
     padding-bottom: 10px;
     margin-bottom: 20px;
 }
 
 #subscribers-section h3 {
-    color: #333;
+    color: #001a09;
     margin-bottom: 20px;
 }
 
@@ -155,7 +155,7 @@ main {
 }
 
 .card h4 {
-    color: #00529b;
+    color: #d9184e; /* Darker Pink/Red */
     margin-top: 0;
     margin-bottom: 15px;
 }
@@ -171,7 +171,7 @@ main {
 
 .usage-section h5, .products-section h5 {
     margin-bottom: 10px;
-    color: #333;
+    color: #001a09;
     border-bottom: 1px solid #eee;
     padding-bottom: 5px;
 }
@@ -196,7 +196,7 @@ main {
 
 .usage-bar-fill {
     height: 100%;
-    background-color: #28a745; /* Green for usage */
+    background-color: #009736; /* Green */
     border-radius: 4px;
 }
 
@@ -207,8 +207,9 @@ main {
 }
 
 .products-section li {
-    background-color: #e0f7fa;
-    color: #00796b;
+    background-color: #ffffff;
+    border: 1px solid #00874d; /* Green */
+    color: #00874d; /* Green */
     padding: 5px 10px;
     border-radius: 4px;
     margin-bottom: 5px;
@@ -249,7 +250,7 @@ header .container {
 
 nav {
     width: 100%;
-    background-color: #004182; /* Slightly darker blue */
+    background-color: #e32242; /* Lighter Red */
     border-radius: 4px;
 }
 
@@ -270,11 +271,11 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #00529b;
+    background-color: #d9184e;
 }
 
 nav ul li a.active {
-    background-color: #ff8c00; /* Telco Orange for active link */
+    background-color: #f53f36; /* Bright Red */
     font-weight: 600;
 }
 
@@ -287,7 +288,7 @@ nav ul li a.active {
 .back-link {
     display: inline-block;
     margin-bottom: 20px;
-    color: #00529b;
+    color: #d9184e; /* Darker Pink/Red */
     text-decoration: none;
     font-weight: 600;
 }
@@ -315,13 +316,13 @@ nav ul li a.active {
 }
 
 .data-table th {
-    background-color: #f8f9fa;
+    background-color: #ffffff;
     font-weight: 600;
-    color: #333;
+    color: #001a09;
 }
 
 .data-table tbody tr:hover {
-    background-color: #f1f1f1;
+    background-color: #f5f5f5; /* Light gray, not in palette, but acceptable for hover */
 }
 
 /* Status Badge Styles */
@@ -335,11 +336,11 @@ nav ul li a.active {
 }
 
 .status-badge.status-paid {
-    background-color: #28a745; /* Green */
+    background-color: #009736; /* Green */
 }
 
 .status-badge.status-due {
-    background-color: #dc3545; /* Red */
+    background-color: #f53f36; /* Bright Red */
 }
 
 /* Small Button Variant */
@@ -356,7 +357,7 @@ nav ul li a.active {
 .product-price {
     font-size: 24px;
     font-weight: 600;
-    color: #00529b;
+    color: #d9184e; /* Darker Pink/Red */
     margin: 15px 0;
 }
 
