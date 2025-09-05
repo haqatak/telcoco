@@ -1,0 +1,426 @@
+/* General Styles */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #edd5d7; /* Light Pink */
+    color: #001a09; /* Very Dark Green/Black */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Login Page Styles */
+.login-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.login-container h2 {
+    margin-bottom: 10px;
+    color: #d9184e; /* Darker Pink/Red */
+}
+
+.login-container p {
+    margin-bottom: 30px;
+    color: #666;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #d9184e; /* Darker Pink/Red */
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #e32242; /* Lighter Red on hover */
+}
+
+.error-message {
+    color: #f53f36; /* Bright Red */
+    margin-top: 15px;
+    min-height: 20px;
+}
+
+/* Dashboard Styles */
+body {
+    background-color: #edd5d7; /* Light Pink */
+    display: block; /* Override flex for dashboard */
+}
+
+header {
+    background-color: #d9184e; /* Darker Pink/Red */
+    color: #ffffff;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.user-info {
+    font-size: 16px;
+}
+
+.btn-secondary {
+    background-color: #009736; /* Green */
+    margin-left: 15px;
+}
+
+.btn-secondary:hover {
+    background-color: #0ca823; /* Bright Green */
+}
+
+main {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#dashboard-content h2, main h2 {
+    color: #d9184e; /* Darker Pink/Red */
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+#subscribers-section h3 {
+    color: #001a09;
+    margin-bottom: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    padding: 20px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card h4 {
+    color: #d9184e; /* Darker Pink/Red */
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.card p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.usage-section, .products-section {
+    margin-top: 20px;
+}
+
+.usage-section h5, .products-section h5 {
+    margin-bottom: 10px;
+    color: #001a09;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+
+.usage-bar-container {
+    margin-bottom: 10px;
+}
+
+.usage-bar-container span {
+    font-size: 12px;
+    color: #666;
+}
+
+.usage-bar {
+    width: 100%;
+    background-color: #e9ecef;
+    border-radius: 4px;
+    height: 10px;
+    margin-top: 5px;
+    overflow: hidden;
+}
+
+.usage-bar-fill {
+    height: 100%;
+    background-color: #009736; /* Green */
+    border-radius: 4px;
+}
+
+.products-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.products-section li {
+    background-color: #ffffff;
+    border: 1px solid #00874d; /* Green */
+    color: #00874d; /* Green */
+    padding: 5px 10px;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    display: inline-block;
+    margin-right: 5px;
+    font-size: 12px;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .user-info {
+        margin-top: 10px;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Navigation Styles */
+header .container {
+    flex-wrap: wrap;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+nav {
+    width: 100%;
+    background-color: #e32242; /* Lighter Red */
+    border-radius: 4px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #d9184e;
+}
+
+nav ul li a.active {
+    background-color: #f53f36; /* Bright Red */
+    font-weight: 600;
+}
+
+/* Clickable Card Style */
+.card.clickable {
+    cursor: pointer;
+}
+
+/* Subscriber Details Page */
+.back-link {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #d9184e; /* Darker Pink/Red */
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+.details-grid {
+    grid-template-columns: 1fr 2fr;
+    align-items: flex-start;
+}
+
+/* Generic Table Styles */
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.data-table th, .data-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.data-table th {
+    background-color: #ffffff;
+    font-weight: 600;
+    color: #001a09;
+}
+
+.data-table tbody tr:hover {
+    background-color: #f5f5f5; /* Light gray, not in palette, but acceptable for hover */
+}
+
+/* Status Badge Styles */
+.status-badge {
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+}
+
+.status-badge.status-paid {
+    background-color: #009736; /* Green */
+}
+
+.status-badge.status-due {
+    background-color: #f53f36; /* Bright Red */
+}
+
+/* Small Button Variant */
+.btn-small {
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+/* Shop Page Styles */
+.product-card {
+    text-align: center;
+}
+
+.product-price {
+    font-size: 24px;
+    font-weight: 600;
+    color: #d9184e; /* Darker Pink/Red */
+    margin: 15px 0;
+}
+
+.product-card .btn {
+    margin-top: 10px;
+}
+
+/* Profile Page Styles */
+#profile-form fieldset {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+#profile-form legend {
+    padding: 0 10px;
+    font-weight: 600;
+    color: #555;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin-right: 10px;
+    width: auto; /* Override general input width */
+}
+
+#profile-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: inherit;
+    resize: vertical;
+}
+
+#profile-form input[readonly] {
+    background-color: #f8f9fa;
+    cursor: not-allowed;
+}
+
+/* Language Selector Styles */
+.lang-selector {
+    margin-right: 15px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.lang-selector select {
+    background-color: #ffffff;
+    color: #d9184e; /* Darker Pink/Red */
+    border: none;
+    border-radius: 4px;
+    padding: 8px 5px;
+    font-weight: 600;
+    cursor: pointer;
+}
