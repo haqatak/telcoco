@@ -26,28 +26,6 @@
         </div>
     </div>
 
-    <script>
-        document.getElementById('login-form').addEventListener('submit', async function(event) {
-            event.preventDefault();
-            const username = document.getElementById('username').value;
-            const errorMessage = document.getElementById('error-message');
-
-            try {
-                const response = await fetch('data/mock_data.json');
-                const data = await response.json();
-                const user = data.users.find(u => u.username === username);
-
-                if (user) {
-                    sessionStorage.setItem('loggedInUser', username);
-                    window.location.href = 'dashboard.html';
-                } else {
-                    errorMessage.textContent = 'Invalid username. Please try again.';
-                }
-            } catch (error) {
-                console.error('Error fetching or parsing data:', error);
-                errorMessage.textContent = 'An error occurred. Please try again later.';
-            }
-        });
-    </script>
+    <script src="js/main.js"></script>
 </body>
 </html>
