@@ -1,0 +1,82 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "john_doe",
+      "name": "John Doe",
+      "address": "123 Main St, Anytown, USA 12345",
+      "contact_prefs": {
+        "email": true,
+        "sms": false
+      },
+      "billing_history": [
+        { "id": "inv-001", "date": "2023-08-01", "amount": 75.50, "status": "Paid" },
+        { "id": "inv-002", "date": "2023-09-01", "amount": 75.50, "status": "Paid" },
+        { "id": "inv-003", "date": "2023-10-01", "amount": 80.00, "status": "Due" }
+      ],
+      "subscribers": [
+        {
+          "id": 101,
+          "name": "John Doe (Primary)",
+          "msisdn": "+1-202-555-0182",
+          "plan": "Premium Unlimited",
+          "products": ["5G Access", "International Roaming", "Voicemail+"],
+          "data_usage": { "used": 45, "total": 100, "unit": "GB" },
+          "call_usage": { "used": 350, "total": 1000, "unit": "minutes" },
+          "sms_usage": { "used": 150, "total": 500, "unit": "messages" },
+          "call_history": [
+            { "date": "2023-10-10", "to": "+1-202-555-0191", "duration": "5:32" },
+            { "date": "2023-10-09", "to": "+1-202-555-0145", "duration": "12:01" }
+          ]
+        },
+        {
+          "id": 102,
+          "name": "Jane Doe (Family)",
+          "msisdn": "+1-202-555-0191",
+          "plan": "Family Share",
+          "products": ["4G LTE", "Voicemail"],
+          "data_usage": { "used": 15, "total": 30, "unit": "GB" },
+          "call_usage": { "used": 800, "total": 1500, "unit": "minutes" },
+          "sms_usage": { "used": 400, "total": 500, "unit": "messages" },
+          "call_history": [
+            { "date": "2023-10-10", "to": "+1-202-555-0182", "duration": "5:32" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "username": "jane_smith",
+      "name": "Jane Smith",
+      "address": "456 Oak Ave, Somecity, USA 67890",
+      "contact_prefs": {
+        "email": true,
+        "sms": true
+      },
+      "billing_history": [
+        { "id": "inv-004", "date": "2023-09-15", "amount": 25.00, "status": "Paid" },
+        { "id": "inv-005", "date": "2023-10-15", "amount": 25.00, "status": "Due" }
+      ],
+      "subscribers": [
+        {
+          "id": 201,
+          "name": "Jane Smith (Primary)",
+          "msisdn": "+1-202-555-0145",
+          "plan": "Basic 10GB",
+          "products": ["4G LTE"],
+          "data_usage": { "used": 8, "total": 10, "unit": "GB" },
+          "call_usage": { "used": 120, "total": 200, "unit": "minutes" },
+          "sms_usage": { "used": 30, "total": 100, "unit": "messages" },
+          "call_history": [
+            { "date": "2023-10-09", "to": "+1-202-555-0182", "duration": "12:01" }
+          ]
+        }
+      ]
+    }
+  ],
+  "products": [
+    { "id": "prod-01", "name": "Unlimited Social Media", "description": "Unlimited data for Facebook, Instagram, Twitter, and Snapchat.", "price": 10.00 },
+    { "id": "prod-02", "name": "International Call Pack", "description": "100 minutes of international calls to selected countries.", "price": 15.00 },
+    { "id": "prod-03", "name": "Cloud Storage 100GB", "description": "100GB of secure cloud storage for your photos and files.", "price": 5.00 }
+  ]
+}
